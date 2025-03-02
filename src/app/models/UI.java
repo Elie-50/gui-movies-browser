@@ -46,7 +46,7 @@ public class UI {
         final public static Font LATO_THIN_ITALIC = generateFonts(LATO_DIR + "Lato-ThinItalic.ttf");
     }
 
-    final public static Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+    final public static Dimension SCREEN_SIZE = Toolkit.getDefaultToolkit().getScreenSize();
 
     final public static int TITLE_BAR_HEIGHT = 35;
     

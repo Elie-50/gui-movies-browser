@@ -1,6 +1,7 @@
 package app.views.components;
 
 import app.models.UI;
+import java.awt.BorderLayout;
 import java.awt.Dimension;
 import javax.swing.JPanel;
 
@@ -12,13 +13,17 @@ public class MainPanel extends JPanel {
 
     private void init() {
         setPreferredSize(new Dimension(
-            (int)UI.screenSize.getWidth(),
-            (int)UI.screenSize.getWidth() - UI.TITLE_BAR_HEIGHT
+            (int)UI.SCREEN_SIZE.getWidth(),
+            (int)UI.SCREEN_SIZE.getWidth() - UI.TITLE_BAR_HEIGHT
         ));
         setBackground(UI.Colors.BACKGROUND_COLOR);
+        setLayout(new BorderLayout());
 
-        // add components
-        add(new InputField("Search movies...", 40, 20));
+        // Form side
+        Form form = new Form();
+        
+
+        add(form, BorderLayout.WEST);
 
     }
 }

@@ -37,7 +37,7 @@ public class TitleBar extends JPanel {
 
     @SuppressWarnings("unused")
     private void init() {
-        setPreferredSize(new Dimension((int)UI.screenSize.getWidth(), UI.TITLE_BAR_HEIGHT));
+        setPreferredSize(new Dimension((int)UI.SCREEN_SIZE.getWidth(), UI.TITLE_BAR_HEIGHT));
 
         setBackground(UI.Colors.SECONDARY_COLOR);
         setLayout(new BorderLayout());

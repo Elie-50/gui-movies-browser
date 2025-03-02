@@ -1,19 +1,15 @@
 package app.views.components;
 
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-
-import javax.swing.JTextField;
-
 import app.models.UI;
-
-import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Insets;
 import java.awt.RenderingHints;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import javax.swing.BorderFactory;
+import javax.swing.JTextField;
 
 public class InputField extends JTextField {
 
@@ -71,7 +67,7 @@ public class InputField extends JTextField {
         setBackground(UI.Colors.SECONDARY_COLOR);
         setBorder(BorderFactory.createEmptyBorder());
         setMargin(new Insets(20, 20, 20, 0));
-        setPreferredSize(new Dimension(400, 30));
+        
         Font font = UI.Fonts.LATO_REGULAR.deriveFont(Font.PLAIN, 18);
         setFont(font);
 
