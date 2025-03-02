@@ -1,0 +1,17 @@
+# Ignore compiled files
+*.class
+*.jar
+
+# Ignore IDE-specific files
+/.idea/
+/.vscode/
+/*.iml
+
+# Ignore logs and temporary files
+logs/
+*.log
+*.tmp
+/bin/
+/lib/
+
+movies.db
