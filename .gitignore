@@ -11,7 +11,5 @@
 logs/
 *.log
 *.tmp
-/bin/
-/lib/
 
 movies.db
